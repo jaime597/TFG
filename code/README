@@ -1,1 +1,23 @@
+Para poder probar adecuadamente el 'dataset2.ipynb' se tienen que tener todos los paquetes instalados y tener Python 3.
 
+Posteriormente, para que todo se ejecute adecuadamente hay que proveer a la GUI de los correctos valores.
+Se debe seleccionar csv/completo.csv como el dataset deseado.
+A continuación, se muestra el csv y una vez se ha visualizado el tiempo deseado se hace click en la 'X' de la ventana.
+Ahora se deben seleccionar los pseudoidentificadores del dataset (fecha_nac, cias_cd, ine11_cd, codpos, cluster y neighbour_cd).
+
+cluster y neighbour_cd aparecen ya calculados en este dataset, aunque han sido calculados y añadidos previamente
+
+Por último, seleccionar jerarquías y niveles:
+  - fecha_nac: Fechas, Nivel 0
+  - ine11_cd: ID municipio, Nivel 0
+  - codpos: Zona, Nivel 0
+  - cluster: Ubicación geográfica, Nivel 0
+  - neighbour_cd: ID municipio, Nivel 1
+  
+Se recomienda seleccionar lo indicado, y si no al menos todos los atributos correspondientes al Nivel 0. 
+Todo aquello que no se seleccione no se podrá generar, niveles superiores. Por ende, los resultados que salgan
+serán más pobres.
+
+Adicionalmente, si se tiene algún problema o no se quiere rellenar todo esto se puede presionar el botón Cancel
+de la primera ventana para que el algoritmo funcione de manera automática (se le pasan manualmente las jerarquías
+y niveles).
