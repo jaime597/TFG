@@ -1,24 +1,8 @@
-Para poder probar adecuadamente el 'dataset2.ipynb' se tienen que tener todos los paquetes instalados y tener Python 3.
+En rmskmeans.py se halla el código relativo algoritmo desarrollado random min size kmeans basado en el min size kmeans.
+Adicionalmente, en prmskmeans.py está la versión paralelizada usando Pandarallel. Esta versión no es muy estable, y falla
+en ciertos sistemas.
 
-Posteriormente, para que todo se ejecute correctamente hay que proveer a la GUI de los correctos valores.
-Se debe seleccionar csv/completo.csv como el dataset deseado.
-A continuación, se muestra el csv y una vez se ha visualizado el tiempo deseado se hace click en la 'X' de la ventana.
-Ahora se deben seleccionar los pseudoidentificadores del dataset (fecha_nac, cias_cd, ine11_cd, codpos, cluster y neighbour_cd).
+Por otro lado, en dataset2.ipynb se encuentra el código principal, con la GUI y el algoritmo. NO FUNCIONA CON PYTHON 2, 
+hace falta Python 3.
 
-cluster y neighbour_cd aparecen ya en este dataset, aunque han sido calculados y añadidos previamente, el dataset original
-no los poseía.
 
-Por último, seleccionar jerarquías y niveles:
-  - fecha_nac: Fechas, Nivel 0
-  - ine11_cd: ID municipio, Nivel 0
-  - codpos: Zona, Nivel 0
-  - cluster: Ubicación geográfica, Nivel 0
-  - neighbour_cd: ID municipio, Nivel 1
-  
-Se recomienda seleccionar lo indicado, y si no al menos todos los atributos correspondientes al Nivel 0. 
-Todo aquello que no se seleccione no se podrá generar (niveles superiores). Por ende, los resultados que salgan
-serán más pobres.
-
-Adicionalmente, si se tiene algún problema o no se quiere rellenar todo esto se puede presionar el botón Cancel
-de la primera ventana para que el algoritmo funcione de manera automática (se le pasan manualmente las jerarquías
-y niveles).
