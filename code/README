@@ -1,4 +1,4 @@
-En rmskmeans.py se halla el código relativo algoritmo desarrollado random min size kmeans basado en el min size kmeans.
+En rmskmeans.py se halla el código relativo al algoritmo desarrollado random min size kmeans basado en el min size kmeans.
 Adicionalmente, en prmskmeans.py está la versión paralelizada usando Pandarallel. Esta versión no es muy estable, y falla
 en ciertos sistemas.
 
