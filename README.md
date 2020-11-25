@@ -31,8 +31,9 @@ Adicionalmente, se ha implementado para si se tiene algún problema o no se quie
 de la primera ventana, el algoritmo funciona de manera automática (se le pasan manualmente las jerarquías y niveles).
 
 En las carpetas se halla lo siguiente:
-  - csv: almacena los archivos necesarios para que funcione el programa principal (dataset principal y datasets a los que hacer join). Estos se generan también al    ejecutar generate_superclusters, a excepción de cias_zona_sector.csv (almacena la información de niveles de salud de Aragón) y dataset_final.csv que es el dataset completo de trabajo.
+  - csv: almacena los archivos necesarios para que funcione el programa principal (dataset principal y datasets a los que hacer join). Tanto cluster como definitivo  se genera al ejecutar generate_superclusters. No obstante, cias_zona_sector.csv (almacena la información de niveles de salud de Aragón) y dataset_final.csv, que es el dataset completo de trabajo son necesarios y no se generan.
   - def: en esta carpeta se generan los archivos de mskmeansrn.ipynb. La carpeta es necesario que exista, si no no podrá guardarlo y generate_superclusters no podrá leer los archivos.
+  
   
 Tener en cuenta que los nombres y archivos pueden ser cambiados por otros, pero tienen que cumplir la estructura establecida.
 
