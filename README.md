@@ -17,7 +17,7 @@ En cuanto a la GUI se recomienda lo siguiente:
   A continuación, se muestra el csv y una vez se ha visualizado el tiempo deseado se hace click en la 'X' de la ventana.
   Ahora se deben seleccionar los pseudoidentificadores del dataset (sexo, fecha_nac, cias_cd, ine11_cd, codpos, cluster y neighbour_cd).
   Por último, seleccionar jerarquías y niveles:
-  - sexo: Génerp, Nivel 0
+  - sexo: Género, Nivel 0
   - fecha_nac: Fechas, Nivel 0
   - ine11_cd: ID municipio, Nivel 0
   - codpos: Zona, Nivel 0
