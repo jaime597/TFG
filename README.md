@@ -2,7 +2,7 @@
 
 Dentro de la carpeta code, se hallan los siguientes ficheros:
 
-- rmskmeans.py, archivo encargado de aplicar el algoritmo random min size kmeans basado en el min size kmeans.
+- rmskmeans.py, archivo encargado de aplicar el algoritmo random min size kmeans basado en el min size kmeans. Trabaja con el csv dataset_final.csv
 - prmskmeans.py está la versión paralelizada usando Pandarallel. Esta versión no es muy estable, y falla
   en ciertos sistemas.
 
@@ -31,8 +31,9 @@ Adicionalmente, se ha implementado para si se tiene algún problema o no se quie
 de la primera ventana, el algoritmo funciona de manera automática (se le pasan manualmente las jerarquías y niveles).
 
 En las carpetas se halla lo siguiente:
-  - csv: almacena los archivos necesarios para que funcione el programa principal (dataset principal y datasets a los que hacer join). Estos se generan también al    ejecutar generate_superclusters, a excepción de cias_zona_sector.csv (almacena la información de niveles de salud de Aragón).
+  - csv: almacena los archivos necesarios para que funcione el programa principal (dataset principal y datasets a los que hacer join). Estos se generan también al    ejecutar generate_superclusters, a excepción de cias_zona_sector.csv (almacena la información de niveles de salud de Aragón) y dataset_final.csv que es el dataset completo de trabajo.
   - def: en esta carpeta se generan los archivos de mskmeansrn.ipynb. La carpeta es necesario que exista, si no no podrá guardarlo y generate_superclusters no podrá leer los archivos.
   
 Tener en cuenta que los nombres y archivos pueden ser cambiados por otros, pero tienen que cumplir la estructura establecida.
 
+dataset_final.csv es distinto al que se empleó para hacer las pruebas finales que aparecen en la memoria, ambos dos son similares pero no iguales, de ahí que los resultados varíen. A este se le han modificado datos para que no sea posible identificar a ningún sujeto.
