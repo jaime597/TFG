@@ -7,7 +7,7 @@ Dentro de la carpeta code, se hallan los siguientes ficheros:
   en ciertos sistemas.
 
 - mskmeansrn.ipynb notebook para ejecutar rmskmeans.
-- generate_superclusters.ipynb, algoritmo encargado de generar 2 nuevas columnas clúster con la mitad de grupos dada la original. Es decir, 100 --> 50 --> 25
+- generate_superclusters.ipynb, algoritmo encargado de generar 2 nuevas columnas clúster con la mitad de grupos dada la original. En este caso y en el explicado en la memoria, 100 --> 50 --> 25
 - dataset2.ipynb se encuentra el código principal, con la GUI y el algoritmo. 
 
 Se puede ejecutar dataset2 directamente ya que se han subido los archivos necesarios para ello. No obstante, si se prefiere se puede ejecutar mskmeansrn para crear la primera clusterización, después, generate_superclusters para los dos siguientes niveles y, finalmente, dataset2. 
@@ -28,13 +28,13 @@ Se recomienda seleccionar lo indicado, y si no al menos todos los atributos corr
 Todo aquello que no se seleccione no se podrá generar (niveles más globales). Por ende, los resultados que salgan serán más pobres o incluso puede haber errores de falta de jerarquías.
 
 Adicionalmente, se ha implementado para si se tiene algún problema o no se quiere rellenar todo esto, que si se presiona el botón Cancel
-de la primera ventana, el algoritmo funciona de manera automática (se le pasan manualmente las jerarquías y niveles).
+de la primera ventana, se le pasan manualmente las jerarquías y niveles.
 
 En las carpetas se halla lo siguiente:
-  - csv: almacena los archivos necesarios para que funcione el programa principal (dataset principal y datasets a los que hacer join). Tanto cluster como definitivo  se genera al ejecutar generate_superclusters. No obstante, cias_zona_sector.csv (almacena la información de niveles de salud de Aragón) y dataset_final.csv, que es el dataset completo de trabajo son necesarios y no se generan.
+  - csv: almacena los archivos necesarios para que funcione el programa principal (dataset principal y datasets a los que hacer join). Tanto cluster como definitivo  se generan al ejecutar generate_superclusters. No obstante, cias_zona_sector.csv (almacena la información de niveles de salud de Aragón) y dataset_final.csv, que es el dataset completo de trabajo, son necesarios y no se generan.
   - def: en esta carpeta se generan los archivos de mskmeansrn.ipynb. La carpeta es necesario que exista, si no no podrá guardarlo y generate_superclusters no podrá leer los archivos.
   
   
-Tener en cuenta que los nombres y archivos pueden ser cambiados por otros, pero tienen que cumplir la estructura establecida.
+Tener en cuenta que los nombres y archivos pueden ser cambiados por otros, pero tienen que cumplir la estructura establecida. Adicionalmente, se deberán cambiar los nombres en los ipynb.
 
 dataset_final.csv es distinto al que se empleó para hacer las pruebas finales que aparecen en la memoria, ambos dos son similares pero no iguales, de ahí que los resultados varíen. A este se le han modificado datos para que no sea posible identificar a ningún sujeto.
