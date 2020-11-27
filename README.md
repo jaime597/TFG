@@ -9,8 +9,9 @@ Dentro de la carpeta code, se hallan los siguientes ficheros:
 - mskmeansrn.ipynb notebook para ejecutar rmskmeans.
 - generate_superclusters.ipynb, algoritmo encargado de generar 2 nuevas columnas clúster con la mitad de grupos dada la original. En este caso y en el explicado en la memoria, 100 --> 50 --> 25
 - dataset2.ipynb se encuentra el código principal, con la GUI y el algoritmo. 
+- quality.ipynb calcula la calidad de una clusterización.
 
-Se puede ejecutar dataset2 directamente ya que se han subido los archivos necesarios para ello. No obstante, si se prefiere se puede ejecutar mskmeansrn para crear la primera clusterización, después, generate_superclusters para los dos siguientes niveles y, finalmente, dataset2. 
+Se puede ejecutar dataset2 directamente ya que se han subido los archivos necesarios para ello. No obstante, si se prefiere se puede ejecutar mskmeansrn para crear la primera clusterización, después, generate_superclusters para los dos siguientes niveles y, finalmente, dataset2. El archivo quality requiere de la previa ejecucción de mskmeansrn, ya que este genera archivos que se necesitan para calcular la calidad.
 
 En cuanto a la GUI se recomienda lo siguiente:
   Se debe seleccionar csv/definitivo.csv como el dataset deseado.
